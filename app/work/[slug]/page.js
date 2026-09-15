@@ -1,3 +1,5 @@
+import './case-study.css';
+
 const studies = {
   'at-home-with-kaitlynn': {
     title: 'At Home with Kaitlynn',
