@@ -1,4 +1,5 @@
 import './globals.css';
+import './portfolio-fixes.css';
 
 export const metadata = {
   title: 'Therese Gorres — Creative, Marketing & Operations Support',
