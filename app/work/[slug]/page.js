@@ -8,7 +8,7 @@ const studies = {
     role: 'Visual direction · Social media design · Marketing design · Design system',
     details: ['Built a consistent visual language for multiple social content types.', 'Created reusable templates for listings, education, testimonials, market updates, lifestyle and community content.', 'Balanced a polished real estate look with a warmer, more approachable lifestyle feel.'],
     result: 'A flexible content system designed for consistency without making every post look identical.',
-    proof: []
+    proof: ['/kaitlynn-board.jpg']
   },
   'reelwork-erp': {
     title: 'Reelwork ERP',
@@ -17,7 +17,7 @@ const studies = {
     role: 'UI/UX design · Product interface design',
     details: ['Designed a login experience and step-by-step business onboarding flow.', 'Created a dashboard with revenue, invoices, inventory, clients and recent activity.', 'Used clear hierarchy and restrained visual styling to keep business information easy to scan.'],
     result: 'A clear, approachable interface direction for a business management product.',
-    proof: []
+    proof: ['/reelwork-board.jpg']
   },
   'digital-ninjas': {
     title: 'Digital Ninjas',
@@ -26,7 +26,7 @@ const studies = {
     role: 'Agency VA · Content support · Social media support',
     details: ['Supported content production across multiple client accounts.', 'Managed and updated agency Google Business Profile activity.', 'Assisted with blog optimization and general marketing execution.'],
     result: 'Consistent multi-platform support within an agency environment.',
-    proof: []
+    proof: ['https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/dps-content.png']
   },
   'social-media-management': {
     title: 'Social Media Management',
@@ -35,7 +35,7 @@ const studies = {
     role: 'Social media support · Content scheduling · Creative support',
     details: ['Prepared and scheduled social content.', 'Wrote captions and supported engagement workflows.', 'Created or adapted graphics for recurring content needs.'],
     result: 'A more consistent social presence supported by repeatable content workflows.',
-    proof: ['https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/social-media-1.png','https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/social-media-2.png']
+    proof: ['/social-design-board.jpg','https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/social-media-1.png','https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/social-media-2.png']
   },
   'gigil-signage': {
     title: 'Gigil Signage',
@@ -110,7 +110,7 @@ export default async function CaseStudyPage({ params }) {
         </div>
         <div className="caseResult"><p className="sectionLabel lightLabel">Result</p><h2>{study.result}</h2></div>
         {study.proof.length > 0 && <div className="caseProof"><p className="sectionLabel">Selected proof</p><div>{study.proof.map((src, i) => <img src={src} alt={`${study.title} work sample ${i + 1}`} key={src}/>)}</div></div>}
-        {study.proof.length === 0 && <div className="caseProofPending"><p>Selected visuals will be added here as the final work samples are curated.</p></div>}
+        {study.proof.length === 0 && <div className="caseProofPending"><p>Additional proof can be shared for roles where this work is relevant.</p></div>}
       </section>
       <section className="workContact"><p className="heroEyebrow">INTERESTED IN SIMILAR SUPPORT?</p><h2>Tell me what you need help with.</h2><a className="button light" href="mailto:constancexvenus@gmail.com">Contact me</a></section>
       <footer><span>Therese Gorres © 2026</span><span>CASE STUDY</span></footer>
