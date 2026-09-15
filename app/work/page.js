@@ -4,8 +4,8 @@ const workGroups = [
     title: 'Design',
     intro: 'Visual, social and digital design work created to support real client needs.',
     items: [
-      { title: 'At Home with Kaitlynn', meta: 'Real Estate · Social Media Design · Marketing Design', text: 'A cohesive visual system supporting listings, educational content, lifestyle, community and everyday social media content.' },
-      { title: 'Reelwork ERP', meta: 'UI/UX · Product Design · Australian Client', text: 'A business management interface including onboarding, dashboard and core ERP screens designed for clarity and ease of use.' }
+      { title: 'At Home with Kaitlynn', meta: 'Real Estate · Social Media Design · Marketing Design', text: 'A cohesive visual system supporting listings, educational content, lifestyle, community and everyday social media content.', href: '/work/at-home-with-kaitlynn' },
+      { title: 'Reelwork ERP', meta: 'UI/UX · Product Design · Australian Client', text: 'A business management interface including onboarding, dashboard and core ERP screens designed for clarity and ease of use.', href: '/work/reelwork-erp' }
     ]
   },
   {
@@ -13,8 +13,8 @@ const workGroups = [
     title: 'Marketing & Social',
     intro: 'Content support, social media execution and marketing assets across client and agency work.',
     items: [
-      { title: 'Digital Ninjas', meta: 'Agency Support · Social Media · Content', text: 'Part-time agency support across client social content, Google Business Profile management and blog optimization.' },
-      { title: 'Social Media Management', meta: 'Content Scheduling · Engagement · Creative Support', text: 'Organic social support including content planning, posting, scheduling, captions and audience engagement.' }
+      { title: 'Digital Ninjas', meta: 'Agency Support · Social Media · Content', text: 'Part-time agency support across client social content, Google Business Profile management and blog optimization.', href: '/work/digital-ninjas' },
+      { title: 'Social Media Management', meta: 'Content Scheduling · Engagement · Creative Support', text: 'Organic social support including content planning, posting, scheduling, captions and audience engagement.', href: '/work/social-media-management' }
     ]
   },
   {
@@ -22,9 +22,9 @@ const workGroups = [
     title: 'SEO & Content',
     intro: 'Search-focused content, local SEO and publishing work built around visibility and useful information.',
     items: [
-      { title: 'Gigil Signage', meta: 'Local SEO · Google Business · Australia', text: 'Managed Google Business Profiles across multiple locations, local citations, NAP consistency and location-based content.' },
-      { title: 'Biomedix Systems', meta: 'SEO Content · Search Console · Philippines', text: 'Restructured and optimized blog content, improved readability and supported local SEO and Search Console monitoring.' },
-      { title: 'Energy Drink Hub', meta: 'Content Editing · Ghost Editing', text: 'Edited and contributed to more than 40 articles with a focus on clarity, structure, flow and publish-ready quality.' }
+      { title: 'Gigil Signage', meta: 'Local SEO · Google Business · Australia', text: 'Managed Google Business Profiles across multiple locations, local citations, NAP consistency and location-based content.', href: '/work/gigil-signage' },
+      { title: 'Biomedix Systems', meta: 'SEO Content · Search Console · Philippines', text: 'Restructured and optimized blog content, improved readability and supported local SEO and Search Console monitoring.', href: '/work/biomedix-systems' },
+      { title: 'Energy Drink Hub', meta: 'Content Editing · Ghost Editing', text: 'Edited and contributed to more than 40 articles with a focus on clarity, structure, flow and publish-ready quality.', href: '/work/energy-drink-hub' }
     ]
   },
   {
@@ -32,8 +32,8 @@ const workGroups = [
     title: 'Operations & E-commerce',
     intro: 'The systems, data, marketplace and admin work that keeps day-to-day business moving.',
     items: [
-      { title: 'Furnish Theory', meta: 'E-commerce · Data · Content · Operations', text: 'Long-term support across marketplace listings, SKU and product data, SEO content, research, outreach, customer service and reporting.' },
-      { title: 'Research & Data Operations', meta: 'Google Sheets · Research · Data Extraction', text: 'Structured research and data work including pivot tables, contact extraction and large-scale company information organization.' }
+      { title: 'Furnish Theory', meta: 'E-commerce · Data · Content · Operations', text: 'Long-term support across marketplace listings, SKU and product data, SEO content, research, outreach, customer service and reporting.', href: '/work/furnish-theory' },
+      { title: 'Research & Data Operations', meta: 'Google Sheets · Research · Data Extraction', text: 'Structured research and data work including pivot tables, contact extraction and large-scale company information organization.', href: '/work/research-data-operations' }
     ]
   }
 ];
@@ -51,7 +51,7 @@ export default function WorkPage() {
   return (
     <main className="workPage">
       <nav className="nav">
-        <a className="brand" href="/">THERESE GORRES</a>
+        <a className="brand" href="/">Therese Gorres</a>
         <div className="navlinks"><a href="/">Home</a><a href="#design">Design</a><a href="#seo">SEO & Content</a><a href="#operations">Operations</a></div>
       </nav>
 
@@ -76,6 +76,7 @@ export default function WorkPage() {
                 <p className="workMeta">{item.meta}</p>
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
+                <a className="caseStudyLink" href={item.href}>View case study →</a>
               </article>
             ))}
           </div>
@@ -90,7 +91,7 @@ export default function WorkPage() {
             <figure key={item.label}><img src={item.src} alt={item.label}/><figcaption>{item.label}</figcaption></figure>
           ))}
         </div>
-        <p className="proofNote">More recent design work, including the Kaitlynn and Reelwork projects, will be added here as we transfer the final selected visuals.</p>
+        <p className="proofNote">More recent design visuals for Kaitlynn and Reelwork will be added to their case studies as we finalize the strongest samples.</p>
       </section>
 
       <section className="workContact">
@@ -99,7 +100,7 @@ export default function WorkPage() {
         <a className="button light" href="mailto:constancexvenus@gmail.com">Contact me</a>
       </section>
 
-      <footer><span>THERESE GORRES © 2026</span><span>WORK · CREATIVE · MARKETING · OPERATIONS</span></footer>
+      <footer><span>Therese Gorres © 2026</span><span>WORK · CREATIVE · MARKETING · OPERATIONS</span></footer>
     </main>
   );
 }
