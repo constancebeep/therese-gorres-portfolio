@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav">
-        <a className="brand" href="#top">THERESE GORRES</a>
+        <a className="brand" href="#top">Therese Gorres</a>
         <div className="navlinks">
           <a href="/work">Work</a>
           <a href="#about">About</a>
@@ -70,11 +70,11 @@ export default function Home() {
 
         <div className="heroV1Visual">
           <div className="heroPhotoWrap">
-            <img src="https://raw.githubusercontent.com/constancebeep/jtmgc-portfolio-main/main/public/hero-photo.jpg" alt="Therese Gorres" />
+            <img src="/therese-hero.jpg" alt="Therese Gorres" />
           </div>
           <div className="heroStats">
-            <div><strong>3+</strong><span>Years VA experience</span></div>
-            <div><strong>5</strong><span>GBP accounts managed</span></div>
+            <div><strong>5+</strong><span>Years VA experience</span></div>
+            <div><strong>10+</strong><span>GBP accounts managed</span></div>
             <div><strong>40+</strong><span>Articles written</span></div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>THERESE GORRES © 2026</span>
+        <span>Therese Gorres © 2026</span>
         <span>CREATIVE · MARKETING · OPERATIONS SUPPORT</span>
       </footer>
     </main>
