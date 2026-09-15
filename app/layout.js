@@ -1,8 +1,8 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Therese Gorres — Multidisciplinary Designer',
-  description: 'Portfolio of Therese Gorres: brand, social, marketing and UI/UX design.'
+  title: 'Therese Gorres — Creative, Marketing & Operations Support',
+  description: 'Portfolio of Therese Gorres: content, local SEO, social media, e-commerce, design and remote operations support.'
 };
 
 export default function RootLayout({ children }) {
